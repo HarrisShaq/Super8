@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wi-Fi Terms and Access</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            background-color: #e41e26;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wi-Fi Terms & Conditions</h1>
+        <p>By clicking "Accept & Continue", you agree to the terms of use for this Wi-Fi network.</p>
+        <p>You will be redirected to the Wyndham Rewards page.</p>
+        <form id="wifiForm">
+            <button type="submit">Accept & Continue</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('wifiForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            window.location.href = "https://www.wyndhamhotels.com/wyndham-rewards/wif.19626";
+        });
+    </script>
+</body>
+</html>
