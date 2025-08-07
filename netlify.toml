@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/*"
+  to = "/wifi.html"
+  status = 200
